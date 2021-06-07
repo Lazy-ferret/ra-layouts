@@ -1,38 +1,101 @@
-.App {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.IconSwitch {
+  display: flex;
+ }
+
+.material-icons {
+  margin: 0 2rem 0 auto;
+    font-size: 5rem;
+}
+
+.CardsView-Products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1450px;
+}
+
+.ShopCard {
+  padding: 15px 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  max-width: 300px;
+  align-items: center;
+  box-shadow: 8px 8px 16px #555;
+}
+
+.ShopCard-Name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ShopCard-Color {
+  font-size: 1rem;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ShopCard-Image {
+ max-width: 100%;
+ }
+
+.ShopCard-Price {
+  display: inline-block;
+  padding: 7px 10px;
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ShopCard-Button {
+  display: inline-block;
+  
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+
+  padding: 7px 10px;
+  border: 1px solid red;
+  border-radius: 25px;
+  float: right;
+}
+
+.ShopItem {
   display: flex;
-  flex-direction: column;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ShopItem-Image, .ShopItem-Color, .ShopItem-Button {
+  flex-basis: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ShopItem-Image img {
+  max-width: 10vw;
+}
+
+.ShopItem-Name {
+  flex-basis: 20%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+
+
+.ShopItem-Price  {
+  flex-basis: 20%;
+  color: red;
+}
+
+.ShopItem-Button button {
+  padding: 7px 10px;
+  border: 1px solid red;
+  border-radius: 25px;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
 }
